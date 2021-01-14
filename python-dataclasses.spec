@@ -1,7 +1,7 @@
 %global pypi_name dataclasses
 
 Name:           python-%{pypi_name}
-Version:        0.7
+Version:        0.8
 Release:        1%{?dist}
 Summary:        A backport of the dataclasses module for Python 3.6
 
@@ -56,5 +56,8 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
 
 %changelog
+* Thu Jan 14 2021 Joel Capitao <jcapitao@redhat.com> - 0.8-1
+- Update to 0.8
+
 * Mon Apr 13 2020 ykarel <ykarel@redhat.com> - 0.7-1
 - Initial package.
